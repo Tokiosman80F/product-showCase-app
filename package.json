@@ -1,0 +1,17 @@
+{
+  "name": "product-showcase-app",
+  "version": "1.0.0",
+  "description": "A simple product showcase and shopping cart app built using the MVC pattern. A responsive frontend developed with HTML, CSS & JavaScript and backend powered by Node.js, Express and MongoDB.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "author": "Toki Osman",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  }
+}
