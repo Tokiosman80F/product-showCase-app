@@ -6,6 +6,4 @@ const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
 
-console.log(process.env.NODE_ENV);
-
 module.exports = app;
