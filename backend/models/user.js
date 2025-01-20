@@ -6,6 +6,6 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
 });
 
-const User = mongoose.model("Lego_Shop", userSchema, "users");
+const User = mongoose.model("Lego_Shop", userSchema, "User");
 
 module.exports = User;
