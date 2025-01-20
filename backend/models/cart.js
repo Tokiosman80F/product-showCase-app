@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
 
-// Single Cart Item
-const cartItemSchema = new mongoose.Schema({
-  productId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Product",
-  },
-  quanttity: Number,
-});
-
-// Entire Cart
 const cartSchema = new mongoose.Schema({
-  items: [cartItemSchema],
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  products: [
+    {
+      productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
+        required: true,
+      },
+      quantity: { type: Number, default: 1 },
+    },
+  ],
 });
 
 const Cart = mongoose.model("Lego_Shop", cartSchema, "cart");

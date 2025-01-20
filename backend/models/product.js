@@ -7,6 +7,6 @@ const productSchema = new mongoose.Schema({
   image: { type: String, required: true },
 });
 
-const Product = mongoose.model("Lego_Shop", productSchema, "products");
+const Product = mongoose.model("Lego_Shop", productSchema, "Product");
 
 module.exports = Product;
